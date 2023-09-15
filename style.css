@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  --btn1-color: #4d96a9;
+  --btn2-3-color: #855fb1;
+  --second-btn1-color: #8fe3f9;
+  --second-btn2-3-color: #d9b8ff;
+  --p-color: #87879d;
+  --h1-color: #28283d;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.main-text1 {
+  text-align: center;
+  width: 500px;
+  transition: 0.3s ease;
+}
+
+.main-text1 {
+  font-size: 50px;
+  color: var(--h1-color);
+  margin-bottom: 20px;
+}
+
+.main-text1 p,
+footer {
+  font-size: 15px;
+  color: var(--p-color);
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 80px;
+  font-style: italic;
+}
+
+.btn1,
+.btn2 {
+  border-radius: 30px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn1 {
+  background-color: var(--btn1-color);
+  width: 200px;
+  height: 50px;
+  margin-right: 20px;
+}
+.btn1:hover {
+  background-color: var(--second-btn1-color);
+  transform: translateY(5px);
+  color: #28283d;
+}
+button span {
+  color: var(--second-btn1-color);
+}
+button span:hover {
+  color: #28283d;
+}
+.btn2 {
+  background-color: var(--btn2-3-color);
+  width: 150px;
+  height: 50px;
+  transition: 0.3s ease;
+}
+.btn2:hover {
+  background-color: var(--second-btn2-3-color);
+  transform: translateY(5px);
+  color: #28283d;
+}
+
+.sep1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.pics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-text1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .img2 {
+    margin-left: 28px;
+    margin-top: 15px;
+  }
+
+  .btn1,
+  .btn2 {
+    display: block;
+    margin-inline: auto;
+    margin-top: 10px;
+  }
+
+  .btn2 {
+    width: 200px;
+  }
+
+  .pics {
+    display: flex;
+    flex-direction: column;
+  }
+}
